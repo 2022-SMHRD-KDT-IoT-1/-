@@ -5,8 +5,14 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+<link href="css/styles.css" rel="stylesheet" />
 </head>
+
 <body>
+<header>
+<h1>회원가입</h1>
+</header>
+<nav>
 	<form action="joinService" method="post">
 		ID : <input name="mb_id"><br>
 		PW : <input name="mb_pw"><br>
@@ -15,6 +21,7 @@
 
 		<button type="submit">회원가입 완료</button>
 	</form>
+</nav>
 
 </body>
 </html>
