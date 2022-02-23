@@ -30,7 +30,7 @@ public class goMain extends HttpServlet {
 		}
 		
 		// 포워드 방식으로 이동
-		RequestDispatcher rd = request.getRequestDispatcher("index.html");
+		RequestDispatcher rd = request.getRequestDispatcher("Main.jsp");
 		rd.forward(request, response);
 	}
 
