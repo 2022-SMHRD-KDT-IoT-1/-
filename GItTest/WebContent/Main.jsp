@@ -29,7 +29,7 @@
 <body id="page-top">
 	<%
 		MemberVO vo = (MemberVO) session.getAttribute("vo");
-	out.print(vo);
+		out.print(vo);
 	%>
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -83,8 +83,7 @@
 						}
 					%>
 				</h2>
-				<h3 class="section-subheading text-muted">Lorem ipsum dolor sit
-					amet consectetur.</h3>
+				<h3 class="section-subheading text-muted">Lorem ipsum dolor sitamet consectetur.</h3>
 			</div>
 			<div class="row text-center">
 				<div class="col-md-4">
