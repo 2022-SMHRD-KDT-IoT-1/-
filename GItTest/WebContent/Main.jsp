@@ -29,7 +29,6 @@
 <body id="page-top">
 		<%
 			MemberVO vo = (MemberVO) session.getAttribute("vo");
-			out.print(vo);
 		%>
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">

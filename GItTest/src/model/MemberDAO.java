@@ -57,4 +57,24 @@ public class MemberDAO {
 			
 		}
 		// === login ===
+		
+		
+		public int update(MemberVO vo) {
+			SqlSession session = sqlSessionFactory.openSession(true);	
+			int cnt = session.update("updateService", vo);
+			session.close();
+			return cnt;
+		}
+		// === update ===
+		
+		
+		
+		public int delete(String mb_id) {
+			SqlSession session = sqlSessionFactory.openSession(true);
+			int cnt = session.delete("deleteService", mb_id);
+			session.close();
+			return cnt;
+			// ¿µÀç
+		}
+		// === delete ===
 }
