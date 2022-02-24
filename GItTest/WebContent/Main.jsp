@@ -226,7 +226,7 @@
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="team-member">
-						<img class="mx-auto rounded-circle" src="assets/img/team/1.jpg"
+						<img class="mx-auto rounded-circle" src="assets/img/team/jj.jpg"
 							alt="..." />
 						<h4>±Ë«ı¡ÿ</h4>
 						<p class="text-muted">Team Leader</p>
@@ -235,7 +235,7 @@
 				</div>
 				<div class="col-lg-4">
 					<div class="team-member">
-						<img class="mx-auto rounded-circle" src="assets/img/team/2.jpg"
+						<img class="mx-auto rounded-circle" src="assets/img/team/yg.jpg"
 							alt="..." />
 						<h4>±Ëøµ¿Á</h4>
 						<p class="text-muted">Team Member</p>
@@ -244,7 +244,7 @@
 				</div>
 				<div class="col-lg-4">
 					<div class="team-member">
-						<img class="mx-auto rounded-circle" src="assets/img/team/3.jpg"
+						<img class="mx-auto rounded-circle" src="assets/img/team/kk.png"
 							alt="..." />
 						<h4>±Ëµø±π</h4>
 						<p class="text-muted">Team Member</p>
@@ -253,7 +253,7 @@
 				</div>
 				<div class="col-lg-4">
 					<div class="team-member">
-						<img class="mx-auto rounded-circle" src="assets/img/team/3.jpg"
+						<img class="mx-auto rounded-circle" src="assets/img/team/hm.png"
 							alt="..." />
 						<h4>«—«ÿπŒ</h4>
 						<p class="text-muted">Team Member</p>
