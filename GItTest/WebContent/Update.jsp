@@ -27,6 +27,7 @@
 					<li><input type="submit" value="JoinUs" class="button fit"
 						style="width: 500px; margin: 0 auto;"></li>
 				</form>
+				
 				<a href="deleteService">
 					<button>È¸¿øÅ»Åð</button>
 				</a>
