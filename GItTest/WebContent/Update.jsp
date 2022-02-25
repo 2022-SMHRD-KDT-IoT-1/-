@@ -17,9 +17,8 @@
 			MemberVO vo = (MemberVO) session.getAttribute("vo");
 		%>
 	<!-- partial:index.partial.html -->
-	<a href="https://front.codes/" class="logo" target="_blank"> <img
-		src="https://assets.codepen.io/1462889/fcy.png" alt="">
-	</a>
+	<a href="Main.jsp" class="logo" target="_blank">
+		<img src="assets/img/logo.png" alt="로고부분"></a>
 
 	<div class="section">
 		<div class="container">
