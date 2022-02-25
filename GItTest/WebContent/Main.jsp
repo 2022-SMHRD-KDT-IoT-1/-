@@ -52,7 +52,6 @@
 						if (vo == null) {
 					%>
 					<li class="nav-item"><a class="nav-link" href="Login.jsp">·Î±×ÀÎ</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">TOP</a></li>
 					<%
 						} else {
 					%>
@@ -61,6 +60,7 @@
 					<%
 						}
 					%>
+					<li class="nav-item"><a class="nav-link" href="#">TOP</a></li>
 				</ul>
 			</div>
 		</div>
