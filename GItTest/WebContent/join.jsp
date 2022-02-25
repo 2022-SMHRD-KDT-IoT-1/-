@@ -5,6 +5,7 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+<meta name="google" content="notranslate">
 <link href="assets/css/login_styles.css" rel="stylesheet" />
 </head>
 
