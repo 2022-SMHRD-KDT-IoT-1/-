@@ -74,7 +74,8 @@
 				<h2 class="section-heading text-uppercase">
 					<%
 						if (vo == null) {
-					%>Service
+					%>
+					Service
 					<%
 						} else {
 					%>
