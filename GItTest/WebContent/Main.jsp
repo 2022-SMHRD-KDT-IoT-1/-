@@ -292,7 +292,7 @@
 				</div>
 				<div class="col-lg-4">
 					<div class="team-member">
-						<img class="mx-auto rounded-circle" src="assets/img/team/3.jpg"
+						<img class="mx-auto rounded-circle" src="assets/img/team/cg.png"
 							alt="..." />
 						<h4>ГыФЁБе</h4>
 						<p class="text-muted">Team Member</p>
