@@ -9,8 +9,8 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
-<meta name="author" content="" />
 <meta name="google" content="notranslate">
+<meta name="author" content="" />
 <title>Connect</title>
 <!-- Favicon-->
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -45,13 +45,14 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
 					<li class="nav-item"><a class="nav-link" href="#services">측정값확인</a></li>
-					<li class="nav-item"><a class="nav-link" href="#portfolio">관련뉴스</a></li>
-					<li class="nav-item"><a class="nav-link" href="#about">제품소개</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">메뉴</a></li>
+					<li class="nav-item"><a class="nav-link" href="#community">커뮤니티</a></li>
+					<li class="nav-item"><a class="nav-link" href="#portfolio">뉴스게시판</a></li>
+					<li class="nav-item"><a class="nav-link" href="#team">팀원소개</a></li>
 					<%
 						if (vo == null) {
 					%>
 					<li class="nav-item"><a class="nav-link" href="Login.jsp">로그인</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">TOP</a></li>
 					<%
 						} else {
 					%>
@@ -74,8 +75,7 @@
 				<h2 class="section-heading text-uppercase">
 					<%
 						if (vo == null) {
-					%>
-					Service
+					%>Service
 					<%
 						} else {
 					%>
@@ -125,7 +125,7 @@
 	<!-- Services-->
 	<section class="page-section">
 		<div class="container">
-			<div class="masthead-subheading">Welcome To Our Item!</div>
+			<div class="masthead-subheading" id="community">Welcome To Our Item!</div>
 			<div class="masthead-heading text-uppercase">It's Nice To Meet
 				You</div>
 			<a class="btn btn-primary btn-xl text-uppercase" href="#">Our
