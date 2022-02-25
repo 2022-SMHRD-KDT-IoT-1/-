@@ -25,4 +25,9 @@
 		delete from t_member where mb_id = #{mb_id}
 	</delete>
 
+
+	<select id="checkService" resultType="model.MemberVO">
+		select * from t_member where mb_id = #{mb_id}
+	</select>
+
 </mapper>

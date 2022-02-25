@@ -77,4 +77,16 @@ public class MemberDAO {
 			// ¿µÀç
 		}
 		// === delete ===
+		
+		public MemberVO idCheck(String mb_id) {
+			SqlSession session = sqlSessionFactory.openSession();
+			MemberVO mvo = session.selectOne("checkService",mb_id);
+			session.close();
+			return mvo; 
+		//=== check ===	
+		}
+		
+		
 }
+
+
