@@ -123,13 +123,17 @@
 			Service</a>
 	</header>
 	<!-- Services-->
-	<section class="page-section">
+	<section class="page-section bg-light">
 		<div class="container">
-			<div class="masthead-subheading" id="community">Welcome To Our Item!</div>
-			<div class="masthead-heading text-uppercase">It's Nice To Meet
-				You</div>
-			<a class="btn btn-primary btn-xl text-uppercase" href="#">Our
-				Main Service</a>
+			<div class="text-center">
+			<h2 class="section-heading text-uppercase">PRODUCT</h2>
+			<h3 class="section-subheading text-muted">나이팅게일제품</h3>
+			</div>
+			<center>
+			<img alt=""	class="ourproduct" src="assets/img/team/neck.jpg">
+			</center>
+			<p>임시로 만들어 놓았음</p>
+			<a href="tem.pdf" download>관련 논문들</a>
 		</div>
 	</section>
 	<!-- Portfolio Grid-->
@@ -244,6 +248,16 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+	
+	<section class="page-section bg-light">
+		<div class="container">
+			<div class="text-center">
+			<h2 class="section-heading text-uppercase">COMMUNITY</h2>
+			<h3 class="section-subheading text-muted">소통공간</h3>
+			</div>
+			<p>게시판 넣을곳</p>
 		</div>
 	</section>
 
