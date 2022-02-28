@@ -84,44 +84,42 @@
 						}
 					%>
 				</h2>
-				<h3 class="section-subheading text-muted">Lorem ipsum dolor sitamet consectetur.</h3>
+				<h3 class="section-subheading text-muted">환영합니다!! 서비스를 이용해주셔서 갑사합니다.</h3>
 			</div>
 			<div class="row text-center">
-				<div class="col-md-4">
-					<span class="fa-stack fa-4x"> <i
-						class="fas fa-circle fa-stack-2x text-primary"></i> <i
-						class="fas fa-lock fa-stack-1x fa-inverse"></i>
-					</span>
-					<h4 class="my-3">Heart Beat</h4>
-					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur
-						adipisicing elit. Minima maxime quam architecto quo inventore
-						harum ex magni, dicta impedit.</p>
-				</div>
-				<div class="col-md-4">
-					<span class="fa-stack fa-4x"> <i
-						class="fas fa-circle fa-stack-2x text-primary"></i> <i
-						class="fas fa-plus fa-stack-1x fa-inverse"></i>
-					</span>
-					<h4 class="my-3">Humidy</h4>
-					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur
-						adipisicing elit. Minima maxime quam architecto quo inventore
-						harum ex magni, dicta impedit.</p>
-				</div>
-				<div class="col-md-4">
-					<span class="fa-stack fa-4x"> <i
-						class="fas fa-circle fa-stack-2x text-primary"></i> <i
-						class="fas fa-twitter fa-stack-1x fa-inverse"></i>
-					</span>
-					<h4 class="my-3">Web Security</h4>
-					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur
-						adipisicing elit. Minima maxime quam architecto quo inventore
-						harum ex magni, dicta impedit.</p>
-				</div>
-			</div>
-		</div>
-		<a class="btn btn-primary btn-xl text-uppercase" href="#">Our Main
-			Service</a>
-	</header>
+			
+                    <div class="col-md-4">
+                      <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/4.PNG" alt="체온" width = "100px" height="100px"></a></div>
+                        <h4 class="my-3">체온</h4>
+                        <p class="text-muted">실시간으로 측정되고 있는 체온 확인</p>
+                    </div>
+                    
+                    <div class="col-md-4">
+				       <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/2.PNG" alt="온습도" width = "100px" height="100px"></a></div>
+                        <h4 class="my-3">온도/습도</h4>
+                        <p class="text-muted">실시간으로 측정되고 있는 온도/습도 확인</p>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/1.PNG" alt="심박수" width = "100px" height="100px"></a></div>
+                        <h4 class="my-3">심박수</h4>
+                        <p class="text-muted">실시간으로 측정되고 있는 심박수 확인</p>
+                    </div>
+                    
+                    <div class="col-md-4">
+        	            <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/3.PNG" alt="공기질" width = "100px" height="100px"></a></div>
+                        <h4 class="my-3">공기질</h4>
+                        <p class="text-muted">현재 위치한 장소/건물의 공기질 측정 확인</p>
+                    </div>
+                    
+                    <div class="col-md-4">
+            	        <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/5.PNG" alt="자세수면" width = "100px" height="100px"></a></div>
+                        <h4 class="my-3">자세상태/수면상태</h4>
+                        <p class="text-muted">현재까지 자세가 올바른 자세인지 확인가능 및 수면상태를 움직을 통해 확인하실수 있습니다.</p>
+                    </div>
+            </div>
+            <!-- <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Our Main Service</a> -->
+        </header>
 	<!-- Services-->
 	<section class="page-section bg-light">
 		<div class="container">
