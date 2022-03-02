@@ -19,7 +19,7 @@
 		%>
 	<!-- partial:index.partial.html -->
 	<a href="Main.jsp" class="logo" target="_blank">
-		<img src="assets/img/logo.png" alt="로고부분"></a>
+		<img src="assets/img/logo2.png" alt="로고부분"></a>
 
 	<div class="section">
 		<div class="container">

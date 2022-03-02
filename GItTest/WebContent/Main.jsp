@@ -35,7 +35,7 @@
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 		<div class="container">
 			<a class="navbar-brand" href="#page-top"><img
-				src="./assets/img/logo.png" alt="..." /></a>
+				src="./assets/img/logo2.png" alt="..." /> connect</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
 				aria-controls="navbarResponsive" aria-expanded="false"
