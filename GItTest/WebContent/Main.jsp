@@ -89,31 +89,31 @@
 			<div class="row text-center">
 			
                     <div class="col-md-4">
-                      <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/4.PNG" alt="체온" width = "100px" height="100px"></a></div>
+                      <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/temp-removebg-preview.png" alt="체온" width = "100px" height="100px"></a></div>
                         <h4 class="my-3">체온</h4>
                         <p class="text-muted">실시간으로 측정되고 있는 체온 확인</p>
                     </div>
                     
                     <div class="col-md-4">
-				       <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/2.PNG" alt="온습도" width = "100px" height="100px"></a></div>
+				       <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/hum-removebg-preview.png" alt="온습도" width = "100px" height="100px"></a></div>
                         <h4 class="my-3">온도/습도</h4>
                         <p class="text-muted">실시간으로 측정되고 있는 온도/습도 확인</p>
                     </div>
                     
                     <div class="col-md-4">
-                        <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/1.PNG" alt="심박수" width = "100px" height="100px"></a></div>
+                        <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/heart-removebg-preview.png" alt="심박수" width = "100px" height="100px"></a></div>
                         <h4 class="my-3">심박수</h4>
                         <p class="text-muted">실시간으로 측정되고 있는 심박수 확인</p>
                     </div>
                     
                     <div class="col-md-4">
-        	            <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/3.PNG" alt="공기질" width = "100px" height="100px"></a></div>
+        	            <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/air-removebg-preview.png" alt="공기질" width = "100px" height="100px"></a></div>
                         <h4 class="my-3">공기질</h4>
                         <p class="text-muted">현재 위치한 장소/건물의 공기질 측정 확인</p>
                     </div>
                     
                     <div class="col-md-4">
-            	        <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/5.PNG" alt="자세수면" width = "100px" height="100px"></a></div>
+            	        <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/sleep-removebg-preview.png" alt="자세수면" width = "100px" height="100px"></a></div>
                         <h4 class="my-3">자세상태/수면상태</h4>
                         <p class="text-muted">현재까지 자세가 올바른 자세인지 확인가능 및 수면상태를 움직을 통해 확인하실수 있습니다.</p>
                     </div>
@@ -316,36 +316,13 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-8 mx-auto text-center">
-					<p class="large text-muted">Lorem ipsum dolor sit amet,
-						consectetur adipisicing elit. Aut eaque, laboriosam veritatis,
-						quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+					<p class="large text-muted">SHMRD PROJECT</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Footer-->
-	<footer class="footer py-4">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-4 text-lg-start">Copyright &copy; Your
-					Website 2021</div>
-				<div class="col-lg-4 my-3 my-lg-0">
-					<a class="btn btn-dark btn-social mx-2" href="#!"><i
-						class="fab fa-twitter"></i></a> <a
-						class="btn btn-dark btn-social mx-2" href="#!"><i
-						class="fab fa-facebook-f"></i></a> <a
-						class="btn btn-dark btn-social mx-2" href="#!"><i
-						class="fab fa-linkedin-in"></i></a>
-				</div>
-				<div class="col-lg-4 text-lg-end">
-					<a class="link-dark text-decoration-none me-3" href="#!">Privacy
-						Policy</a> <a class="link-dark text-decoration-none" href="#!">Terms
-						of Use</a>
-				</div>
-			</div>
-		</div>
-	</footer>
+	
 	<!-- Portfolio Modals-->
 	<!-- Portfolio item 1 modal popup-->
 <div class="portfolio-modal modal fade" id="portfolioModal1"
