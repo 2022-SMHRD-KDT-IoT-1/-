@@ -16,7 +16,7 @@
 <body style="background-image: url('assets/img/header-bg2.jpg') !important";>
 	<!-- partial:index.partial.html -->
 	<a href="Main.jsp" class="logo" target="_blank">
-		<img src="assets/img/logo2.png" alt="로고부분"></a>
+		<img src="assets/img/logo2.png"style="float: right; width:25px; height:25px; margin:30px" alt="로고부분"></a>
 	<div class="section">
 		<div class="container">
 			<div class="row full-height justify-content-center">
