@@ -13,7 +13,7 @@
 	href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
 <link rel="stylesheet" href="css/update_style.css">
 </head>
-<body>
+<body style="background-image: url('assets/img/header-bg2.jpg') !important";>
 	<%
 			MemberVO vo = (MemberVO) session.getAttribute("vo");
 		%>
