@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="model.Sensor_valueDAO">
+	
+	<insert id="Sensor_value" parameterType="model.Sensor_valueVO">
+		insert into t_sensor_value
+		values (t_sensor_value_seq.nextval, #{sensor_seq}, #{sensing_value}, sysdate, #{mb_id})
+	</insert>
+	
+	<select id="selectSensing" resultType="model.Sensor_valueVO">
+		select * from t_sensor_value where mb_id = #{mb_id}
+	</select>
+
+</mapper>

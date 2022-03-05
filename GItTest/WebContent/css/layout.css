@@ -1,0 +1,43 @@
+@charset "EUC-KR";
+
+* {margin: 0; padding: 0;}
+#wrap {width: 100%; }   
+header {width: 100%; height: 150px; vertical-align: bottom;}
+aside {float: left; width: 10%; height: 700px; }
+section {float: left; width: 80%; height: 700px; }
+article {float: left; width: 10%; height: 700px; }
+footer {clear: both; width: 100%; height: 150px; }
+
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1220px){
+    aside {width: 40%;}
+    section {width: 60%;}
+    article {width: 100%; height: 300px;}
+}
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px){
+    aside {width: 100%; height: 300px;}
+    section {width: 100%; height: 300px;}
+}
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 480px){
+    header {height: 300px;}
+    aside {height: 200px;}
+    section {height: 200px;}
+}
+
+logo_st {
+	font-size: 1.25em !important;
+	color: yellow !important;
+	text-align: center !important;
+	font-style: bold !important;
+}
+
+
+
+.btn_position {
+	padding-left:10%;
+}
+
+
+

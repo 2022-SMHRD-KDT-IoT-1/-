@@ -1,9 +1,5 @@
-package controller;
+package Pojo;
 
-import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -11,14 +7,11 @@ import javax.servlet.http.HttpSession;
 import model.MemberDAO;
 import model.MemberVO;
 
-@WebServlet("/loginService")
-public class loginService extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+public class LoginCon implements Command {
 
-	protected void service(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
 
-		request.setCharacterEncoding("euc-kr");
+	@Override
+	public String execute(HttpServletRequest request, HttpServletResponse response) {
 		// 1. 파라미터 수집
 		String mb_id = request.getParameter("mb_id");
 		String mb_pw = request.getParameter("mb_pw");
@@ -40,6 +33,6 @@ public class loginService extends HttpServlet {
 		}
 		
 		// main.jsp로 이동
-		response.sendRedirect("goMain");
+		return "redirect:gomain.do";
 	}
 }
