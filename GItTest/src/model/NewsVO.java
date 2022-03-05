@@ -6,7 +6,7 @@ public class NewsVO {
 	public class TNews {
 
 	    // 뉴스 번호 
-	    private Double news_seq;
+	    private int news_seq;
 
 	    // 뉴스 제목 
 	    private String news_title;
@@ -32,7 +32,7 @@ public class NewsVO {
 	    // 작성자 아이디 
 	    private String mb_id;
 
-		public TNews(Double news_seq, String news_title, String news_content, String news_url, Date news_date,
+		public TNews(int news_seq, String news_title, String news_content, String news_url, Date news_date,
 				String news_file1, String news_file2, Date reg_date, String mb_id) {
 			this.news_seq = news_seq;
 			this.news_title = news_title;
@@ -45,11 +45,11 @@ public class NewsVO {
 			this.mb_id = mb_id;
 		}
 
-		public Double getNews_seq() {
+		public int getNews_seq() {
 			return news_seq;
 		}
 
-		public void setNews_seq(Double news_seq) {
+		public void setNews_seq(int news_seq) {
 			this.news_seq = news_seq;
 		}
 

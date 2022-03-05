@@ -14,7 +14,7 @@
 <h1>회원가입</h1>
 </header>
 <nav>
-	<form action="joinService" method="post">
+	<form action="join.do" method="post">
 		ID : <input name="mb_id"><br>
 		PW : <input name="mb_pw"><br>
 		NAME : <input name="mb_name"><br>

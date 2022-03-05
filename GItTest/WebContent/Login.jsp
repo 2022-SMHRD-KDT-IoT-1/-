@@ -17,13 +17,15 @@
 	<!-- partial:index.partial.html -->
 	<a href="Main.jsp" class="logo" target="_blank">
 		<img src="assets/img/logo2.png"style="float: right; width:25px; height:25px; margin:30px" alt="로고부분"></a>
+	</a>
+
 	<div class="section">
 		<div class="container">
 			<div class="row full-height justify-content-center">
 				<div class="col-12 text-center align-self-center py-5">
 					<div class="section pb-5 pt-5 pt-sm-2 text-center">
 						<h6 class="mb-0 pb-3">
-							<span style="color: #ffeba7 !important";>Log In </span><span style="color: #ffeba7 !important";>Sign Up</span>
+							<span style="color: #ffeba7 !important">Log In </span><span style="color: #ffeba7 !important">Sign Up</span>
 						</h6>
 						<input class="checkbox" type="checkbox" id="reg-log"
 							name="reg-log" /> <label for="reg-log"></label>
@@ -34,7 +36,7 @@
 									<div class="center-wrap">
 										<div class="section text-center">
 											<h4 class="mb-4 pb-3">Log In</h4>
-											<form action="loginService" method="post">
+											<form action="login.do" method="post">
 												<div class="form-group">
 													<input type="text" name="mb_id" class="form-style"
 														placeholder="Your ID" id="logemail" autocomplete="off">
@@ -58,8 +60,8 @@
 								<div class="card-back">
 									<div class="center-wrap">
 										<div class="section text-center">
-											<h4 class="mb-4 pb-3">Sign Up</h4>
-											<form action="joinService" method="post">
+											<h4>Sign Up</h4>
+											<form action="join.do" method="post">
 												<div class="form-group">
 													<input type="text" name="mb_name" class="form-style"
 														placeholder="Your Full Name" id="logname"
@@ -72,7 +74,7 @@
 														autocomplete="off"> <i
 														class="input-icon uil uil-at"></i>
 													<P id="result"></P>
-													<button type="button" onClick="idCheck()">중복확인</button>
+													<button type="button" class="btn" onClick="idCheck()">중복확인</button>
 												</div>
 
 
@@ -88,7 +90,7 @@
 														autocomplete="off"> <i
 														class="input-icon uil uil-phone-alt"></i>
 												</div>
-												<button onclick='location.href="goMain"'>submit</button>
+												<button class="btn mt-3" onclick='location.href="goMain"'>submit</button>
 											</form>
 										</div>
 									</div>
@@ -120,11 +122,11 @@
 					console.log(res);
 					if (res == 'true') {
 						// 사용가능한 아이디
-						$('#result').html('사용가능한 이메일입니다.');
+						$('#result').html('사용 가능한 아이디 입니다.');
 						$('#result').css('color', 'green');
 					} else {
 						// 중복된 아이디
-						$('#result').html('중복된 이메일입니다.');
+						$('#result').html('중복된 아이디 입니다.');
 						$('#result').css('color', 'red');
 					}
 				},

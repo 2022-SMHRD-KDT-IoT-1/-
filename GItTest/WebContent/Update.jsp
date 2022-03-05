@@ -13,13 +13,13 @@
 	href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
 <link rel="stylesheet" href="css/update_style.css">
 </head>
-<body style="background-image: url('assets/img/header-bg2.jpg') !important";>
+<body>
 	<%
 			MemberVO vo = (MemberVO) session.getAttribute("vo");
 		%>
 	<!-- partial:index.partial.html -->
 	<a href="Main.jsp" class="logo" target="_blank">
-		<img src="assets/img/logo2.png" alt="로고부분"></a>
+		<img src="assets/img/logo.png" alt="로고부분"></a>
 
 	<div class="section">
 		<div class="container">
@@ -36,7 +36,7 @@
 									<div class="center-wrap">
 										<div class="section text-center">
 											<h4 class="mb-4 pb-3">개인 정보 수정</h4>
-											<form action="updateService" method="post">
+											<form action="update.do" method="post">
 												<div class="form-group">
 													<input type="text" name="mb_name" class="form-style"
 														placeholder="Your Name" id="logemail" autocomplete="off">
@@ -56,7 +56,7 @@
 												</div>
 												<button type="submit" class="btn mt-4">submit</button>
 											</form>
-											<a href="deleteService">
+											<a href="delete.do">
 												<button class="btn mt-4">회원탈퇴</button>
 											</a>
 

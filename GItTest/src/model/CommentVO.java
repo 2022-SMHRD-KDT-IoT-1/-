@@ -4,10 +4,10 @@ import java.sql.Date;
 
 public class CommentVO {
 	// 댓글 순번 
-    private Double comm_seq;
+    private int comm_seq;
 
     // 원글 순번 
-    private Double article_seq;
+    private int article_seq;
 
     // 댓글 내용 
     private String comm_content;
@@ -18,7 +18,7 @@ public class CommentVO {
     // 댓글 작성자 
     private String mb_id;
 
-	public CommentVO(Double comm_seq, Double article_seq, String comm_content, Date comm_date, String mb_id) {
+	public CommentVO(int comm_seq, int article_seq, String comm_content, Date comm_date, String mb_id) {
 		this.comm_seq = comm_seq;
 		this.article_seq = article_seq;
 		this.comm_content = comm_content;
@@ -26,19 +26,19 @@ public class CommentVO {
 		this.mb_id = mb_id;
 	}
 
-	public Double getComm_seq() {
+	public int getComm_seq() {
 		return comm_seq;
 	}
 
-	public void setComm_seq(Double comm_seq) {
+	public void setComm_seq(int comm_seq) {
 		this.comm_seq = comm_seq;
 	}
 
-	public Double getArticle_seq() {
+	public int getArticle_seq() {
 		return article_seq;
 	}
 
-	public void setArticle_seq(Double article_seq) {
+	public void setArticle_seq(int article_seq) {
 		this.article_seq = article_seq;
 	}
 

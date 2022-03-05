@@ -4,7 +4,7 @@ import java.sql.Date;
 
 public class CommunityVO {
 	// 글 번호 
-    private Double article_seq;
+    private int article_seq;
 
     // 글 제목 
     private String article_title;
@@ -24,7 +24,7 @@ public class CommunityVO {
     // 글 작성자 아이디 
     private String mb_id;
 
-	public CommunityVO(Double article_seq, String article_title, String article_content, String article_file1,
+	public CommunityVO(int article_seq, String article_title, String article_content, String article_file1,
 			String article_file2, Date article_date, String mb_id) {
 		this.article_seq = article_seq;
 		this.article_title = article_title;
@@ -35,11 +35,11 @@ public class CommunityVO {
 		this.mb_id = mb_id;
 	}
 
-	public Double getArticle_seq() {
+	public int getArticle_seq() {
 		return article_seq;
 	}
 
-	public void setArticle_seq(Double article_seq) {
+	public void setArticle_seq(int article_seq) {
 		this.article_seq = article_seq;
 	}
 

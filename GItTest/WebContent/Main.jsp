@@ -1,3 +1,6 @@
+<%@page import="model.BoardVO"%>
+<%@page import="model.Sensor_valueVO"%>
+<%@page import="java.util.List"%>
 <%@page import="model.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
@@ -31,11 +34,14 @@
 	<%
 		MemberVO vo = (MemberVO) session.getAttribute("vo");
 	%>
+		<%
+		List<BoardVO> list = (List<BoardVO>) request.getAttribute("list");
+	%>
 	<!-- Navigation-->
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" >
 		<div class="container">
 			<a class="navbar-brand" href="#page-top"><img
-				src="./assets/img/logo2.png" alt="..." /> connect</a>
+				src="./assets/img/logo2.png" alt="..." /> CONNECT</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
 				aria-controls="navbarResponsive" aria-expanded="false"
@@ -43,10 +49,11 @@
 				Menu <i class="fas fa-bars ms-1"></i>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-					<li class="nav-item"><a class="nav-link" href="#services">측정값확인</a></li>
-					<li class="nav-item"><a class="nav-link" href="#community">커뮤니티</a></li>
+				<ul class="navbar-nav tex
+				t-uppercase ms-auto py-4 py-lg-0">
+					<li class="nav-item"><a class="nav-link" href="senSel.do">측정값확인</a></li>
 					<li class="nav-item"><a class="nav-link" href="#portfolio">뉴스게시판</a></li>
+					<li class="nav-item"><a class="nav-link" href="#community">게시판</a></li>
 					<li class="nav-item"><a class="nav-link" href="#team">팀원소개</a></li>
 					<%
 						if (vo == null) {
@@ -56,7 +63,7 @@
 						} else {
 					%>
 					<li class="nav-item"><a class="nav-link" href="Update.jsp">개인정보수정</a></li>
-					<li class="nav-item"><a class="nav-link" href="LogoutService">로그아웃</a></li>
+					<li class="nav-item"><a class="nav-link" href="logout.do">로그아웃</a></li>
 					<%
 						}
 					%>
@@ -84,38 +91,38 @@
 						}
 					%>
 				</h2>
-				<h3 class="section-subheading text-muted" style="color: #ffeba7 !important";>환영합니다!! 서비스를 이용해주셔서 갑사합니다.</h3>
+				<h3 class="section-subheading text-muted">환영합니다!! 서비스를 이용해주셔서 갑사합니다.</h3>
 			</div>
 			<div class="row text-center">
 			
                     <div class="col-md-4">
-                      <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/temp-removebg-preview.png" alt="체온" width = "100px" height="100px"></a></div>
-                        <h4 class="my-3" style="color: #ffeba7 !important";>체온</h4>
-                        <p class="text-muted" style="color: #ffffff !important";>실시간으로 측정되고 있는 체온 확인</p>
+                      <div><a class="temperautre"> <img class="sensorlogo" src="./assets/img/temp-removebg-preview.png" alt="체온" width = "100px" height="100px"></a></div>
+                        <h4 class="my-3">체온</h4>
+                        <p class="text-muted">실시간으로 측정되고 있는 체온 확인</p>
                     </div>
                     
                     <div class="col-md-4">
-				       <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/hum-removebg-preview.png" alt="온습도" width = "100px" height="100px"></a></div>
-                        <h4 class="my-3" style="color: #ffeba7 !important";>온도/습도</h4>
-                        <p class="text-muted" style="color: #ffffff !important";>실시간으로 측정되고 있는 온도/습도 확인</p>
+				       <div><a class="temperautre"> <img class="sensorlogo" src="./assets/img/hum-removebg-preview.png" alt="온습도" width = "100px" height="100px"></a></div>
+                        <h4 class="my-3">온도/습도</h4>
+                        <p class="text-muted">실시간으로 측정되고 있는 온도/습도 확인</p>
                     </div>
                     
                     <div class="col-md-4">
-                        <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/heart-removebg-preview.png" alt="심박수" width = "100px" height="100px"></a></div>
-                        <h4 class="my-3" style="color: #ffeba7 !important";>심박수</h4>
-                        <p class="text-muted" style="color: #ffffff !important";>실시간으로 측정되고 있는 심박수 확인</p>
+                        <div><a class="temperautre"> <img class="sensorlogo" src="./assets/img/heart-removebg-preview.png" alt="심박수" width = "100px" height="100px"></a></div>
+                        <h4 class="my-3">심박수</h4>
+                        <p class="text-muted">실시간으로 측정되고 있는 심박수 확인</p>
                     </div>
                     
                     <div class="col-md-4">
-        	            <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/air-removebg-preview.png" alt="공기질" width = "100px" height="100px"></a></div>
-                        <h4 class="my-3" style="color: #ffeba7 !important";>공기질</h4>
-                        <p class="text-muted" style="color: #ffffff !important";>현재 위치한 장소/건물의 공기질 측정 확인</p>
+        	            <div><a class="temperautre"> <img class="sensorlogo" src="./assets/img/air-removebg-preview.png" alt="공기질" width = "100px" height="100px"></a></div>
+                        <h4 class="my-3">공기질</h4>
+                        <p class="text-muted">현재 위치한 장소/건물의 공기질 측정 확인</p>
                     </div>
                     
                     <div class="col-md-4">
-            	        <div><a class="temperautre" href="#"> <img class="sensorlogo" src="./assets/img/sleep-removebg-preview.png" alt="자세수면" width = "100px" height="100px"></a></div>
-                        <h4 class="my-3" style="color: #ffeba7 !important";>자세상태/수면상태</h4>
-                        <p class="text-muted" style="color: #ffffff !important";>현재까지 자세가 올바른 자세인지 확인가능 및 수면상태를 움직을 통해 확인하실수 있습니다.</p>
+            	        <div><a class="temperautre"> <img class="sensorlogo" src="./assets/img/sleep-removebg-preview.png" alt="자세수면" width = "100px" height="100px"></a></div>
+                        <h4 class="my-3">자세상태/수면상태</h4>
+                        <p class="text-muted">현재까지 자세가 올바른 자세인지 확인가능 및 수면상태를 움직을 통해 확인하실수 있습니다.</p>
                     </div>
             </div>
             <!-- <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Our Main Service</a> -->
@@ -130,7 +137,7 @@
 			<center>
 			<img alt=""	class="ourproduct" src="assets/img/team/neck.jpg">
 			</center>
-			<p>임시로 만들어 놓았음</p>
+			
 			<a href="tem.pdf" download>관련 논문들</a>
 		</div>
 	</section>
@@ -252,10 +259,11 @@
 	<section class="page-section bg-light">
 		<div class="container">
 			<div class="text-center">
-			<h2 class="section-heading text-uppercase">COMMUNITY</h2>
-			<h3 class="section-subheading text-muted">소통공간</h3>
+			<h2 class="section-heading text-uppercase">
+			<a id="community" href="goboardmain.do">COMMUNITY</a></h2>
+			<h3 class="section-subheading text-muted">게시판</h3>
 			</div>
-			<p>게시판 넣을곳</p>
+			<p></p>
 		</div>
 	</section>
 
@@ -264,8 +272,7 @@
 		<div class="container">
 			<div class="text-center">
 				<h2 class="section-heading text-uppercase">connect 팀 소개</h2>
-				<h3 class="section-subheading text-muted">Lorem ipsum dolor sit
-					amet consectetur.</h3>
+				<h3 class="section-subheading text-muted"></h3>
 			</div>
 			<div class="row">
 				<div class="col-lg-4">
