@@ -20,7 +20,7 @@
 	<div id="wrap">
 		<header> <nav
 			class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-		<a href="#page-top"><img
+		<a href="gomain.do"><img
 			src="./assets/img/logo2.png " alt="..." width="32px" height="32px"/ >
 			CONNECT</a> </nav> </header>
 		<aside></aside>
