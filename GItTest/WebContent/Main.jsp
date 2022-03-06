@@ -135,9 +135,10 @@
 			<h3 class="section-subheading text-muted">나이팅게일제품</h3>
 			</div>
 			<center>
-			<img alt=""	class="ourproduct" src="assets/img/team/neck.jpg">
+			<img alt=""	class="ourproduct" src="assets/img/team/DON.PNG">
 			</center>
-			
+			<br><br><p align="center" >제품 소개</p>
+			<span>체온, 심박, 주변 온습도 등이 알고 싶지만 사과 워치는 투머치인데 흠.... 그래서 준비했습니다. 신개념 웨어러블 목배게 '나이팅게일'!!! </span><br>
 			<a href="tem.pdf" download>관련 논문들</a>
 		</div>
 	</section>
