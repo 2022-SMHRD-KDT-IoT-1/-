@@ -6,7 +6,7 @@
 	
 	<insert id="Sensor_value" parameterType="model.Sensor_valueVO">
 		insert into t_sensor_value
-		values (t_sensor_value_seq.nextval, #{sensor_seq}, #{sensing_value}, sysdate, #{mb_id})
+		values (t_sensor_value_seq.nextval, #{temperature},#{humidity},#{xacceleration},#{yacceleration},#{zacceleration},#{heart_rate}, sysdate, #{mb_id})
 	</insert>
 	
 	<select id="selectSensing" resultType="model.Sensor_valueVO">

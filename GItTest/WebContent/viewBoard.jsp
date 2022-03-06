@@ -61,28 +61,5 @@
 	<footer></footer>
 
 
-	<%-- <div id = "board">
-				<table id="list">
-					<tr>
-						<td><%=bvo.getArticle_title() %></td>
-					</tr>
-					<tr>
-						<td><%=bvo.getMb_id() %></td>
-					</tr>
-					<tr>
-						<td colspan="2"><%=bvo.getArticle_content() %></td>
-					</tr>
-					<tr>
-						<td colspan="2">
-							<img alt="" src="img/<%=bvo.getArticle_file()%>">
-						</td>
-					</tr>
-					<tr>
-						<td colspan="2"><a href="goBoardMain"><button>뒤로가기</button></a></td>
-					</tr>
-				</table>
-			</div>
- --%>
-
 </body>
 </html>

@@ -263,7 +263,6 @@
 			<a id="community" href="goboardmain.do">COMMUNITY</a></h2>
 			<h3 class="section-subheading text-muted">°Ô½ÃÆÇ</h3>
 			</div>
-			<p></p>
 		</div>
 	</section>
 

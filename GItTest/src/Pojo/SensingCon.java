@@ -18,6 +18,8 @@ public class SensingCon implements Command {
 		HttpSession session = request.getSession();
 		MemberVO vo = (MemberVO) session.getAttribute("vo");
 		
+		
+		
 		String mb_id = vo.getMb_id();
 		System.out.println(mb_id);
 		

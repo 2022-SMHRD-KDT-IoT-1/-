@@ -24,18 +24,40 @@ public class Sensor_value extends HttpServlet {
 		HttpSession session = request.getSession();
 		MemberVO vo = (MemberVO) session.getAttribute("vo");
 
-		String sensor_seq = request.getParameter("sensor_seq");
-		String sensing_value = request.getParameter("sensing_value");
+//		String temperature = request.getParameter("temperature");
+//		String humidity = request.getParameter("humidity");
+//		String xacceleration = request.getParameter("xacceleration");
+//		String yacceleration = request.getParameter("yacceleration");
+//		String zacceleration = request.getParameter("zacceleration");
+//		String heart_rate = request.getParameter("heart_rate");
+		
+		String tem = request.getParameter("Tc");
+		String hum = request.getParameter("hum");
+		String xac = request.getParameter("xac");
+		String yac = request.getParameter("yac");
+		String zac = request.getParameter("zac");
+		String heart_rate = request.getParameter("heart_rate");
 		String mb_id = request.getParameter("mb_id");
 		
-		int sensor_seqs = Integer.parseInt(sensor_seq);
-		double sensing_values = Double.parseDouble(sensing_value);
+//		double temperatures = Double.parseDouble(temperature);
+//		double humiditys = Double.parseDouble(humidity);
+//		double xaccelerations = Double.parseDouble(xacceleration);
+//		double yaccelerations = Double.parseDouble(yacceleration);
+//		double zxaccelerations = Double.parseDouble(zacceleration);
+//		int heart_rates = Integer.parseInt(heart_rate);
+		
+		double temperatures = Double.parseDouble(tem);
+		double humiditys = Double.parseDouble(hum);
+		double xaccelerations = Double.parseDouble(xac);
+		double yaccelerations = Double.parseDouble(yac);
+		double zxaccelerations = Double.parseDouble(zac);
+		int heart_rates = Integer.parseInt(heart_rate);
 		
 		//String mb_id = "gur5841";
 		//System.out.println(sensor_seq+", "+sensing_value+", "+mb_id);
 		
 		Sensor_valueDAO dao = new Sensor_valueDAO();
-		Sensor_valueVO svo = new Sensor_valueVO(sensor_seqs, sensing_values, mb_id);
+		Sensor_valueVO svo = new Sensor_valueVO(temperatures, humiditys,xaccelerations, yaccelerations,zxaccelerations,heart_rates,mb_id);
 		int cnt = dao.insert(svo);
 		
 	    response.setStatus(200);
