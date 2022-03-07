@@ -91,7 +91,7 @@
 						}
 					%>
 				</h2>
-				<h3 class="section-subheading text-muted">환영합니다!! 서비스를 이용해주셔서 갑사합니다.</h3>
+				<h3 class="section-subheading text-muted" style="color:#ffc800 !important;">환영합니다! 서비스를 이용해주셔서 감사합니다.</h3>
 			</div>
 			<div class="row text-center">
 			
@@ -131,24 +131,24 @@
 	<section class="page-section bg-light">
 		<div class="container">
 			<div class="text-center">
-			<h2 class="section-heading text-uppercase">PRODUCT</h2>
-			<h3 class="section-subheading text-muted">나이팅게일제품</h3>
+			<h2 class="section-heading text-uppercase" style="color:#ffc800;">PRODUCT</h2>
+			<h3 class="section-subheading text-muted">CONNECT</h3>
 			</div>
 			<center>
-			<img alt=""	class="ourproduct" src="./assets/img/A.PNG"><h6>(전면)</h6> 
-			<img alt=""	class="ourproduct" src="./assets/img/B.PNG"><h6>(윗면)</h6>
+			<img class="ourproduct" src="./assets/img/A.png"><h6>(전면)</h6> 
+			<img class="ourproduct" src="./assets/img/B.png"><h6>(윗면)</h6>
 			</center>
-			<br><br><p align="center" >제품 소개</p>
+			<br><br><h4 align="center">제품 소개</h4>
+		
+			<br><br><h5 class="text-muted" >체온측정이 필수인 이 시점에서 상시로 생체센서와 LED를 통해 사용자의 체온을 정확하게 측정하고 사용자가 확인할 수 있으며 심박수, 심전도, 습도 측정을 통해 사용자 자신의 건강 상태를 파악할 수 있다.<br><br> 사용자의 수면상태와 자세도 관리하기 때문에 불면증을 치료하는데 도움을 줄 수 있다.<br><br> 워치 착용이 불편한 사용자들이나 어린이 또는 노약자에게 목걸이 형식의 웨어러블을 제공하여 불편함을 해소 할 수 있다.<br><br> 이러한 상태들을 실시간으로 기록하고 사용자가 확인할 수 있다.</h5><br>
 			
-			<span>소개글 --> 색상 까지 !!!!!! </span><br>
-			<a href="tem.pdf" download>관련 논문들</a>
 		</div>
 	</section>
 	<!-- Portfolio Grid-->
 	<section class="page-section bg-light" id="portfolio">
 		<div class="container">
 			<div class="text-center">
-				<h2 class="section-heading text-uppercase">News</h2>
+				<h2 class="section-heading text-uppercase" style="color:#ffc800;">News</h2>
 				<h3 class="section-subheading text-muted">우리 제품에 관련된 뉴스들</h3>
 			</div>
 			<div class="row">
@@ -273,7 +273,7 @@
 	<section class="page-section bg-light" id="team">
 		<div class="container">
 			<div class="text-center">
-				<h2 class="section-heading text-uppercase">connect 팀 소개</h2>
+				<h2 class="section-heading text-uppercase" style="color:#ffc800;">connect 팀 소개</h2>
 				<h3 class="section-subheading text-muted"></h3>
 			</div>
 			<div class="row">

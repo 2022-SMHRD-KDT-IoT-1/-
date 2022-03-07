@@ -645,6 +645,11 @@ progress {
   margin-left: auto;
 }
 
+.container > st {
+	font-size: 15px !important;
+	color: black !important;
+}
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;

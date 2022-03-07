@@ -13,13 +13,13 @@
 	href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
 <link rel="stylesheet" href="css/update_style.css">
 </head>
-<body>
+<body style="background-image: url('assets/img/header-bg2.jpg') !important";>
 	<%
 			MemberVO vo = (MemberVO) session.getAttribute("vo");
 		%>
 	<!-- partial:index.partial.html -->
 	<a href="Main.jsp" class="logo" target="_blank">
-		<img src="assets/img/logo.png" alt="로고부분"></a>
+		<img src="assets/img/logo2.png" alt="로고부분"></a>
 
 	<div class="section">
 		<div class="container">
