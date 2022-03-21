@@ -1,0 +1,159 @@
+#include <Arduino.h>
+#include <WiFi.h>
+#include <WiFiMulti.h>
+#include <HTTPClient.h>
+WiFiMulti wifiMulti;
+
+//온도센서
+int ThermistorPin = 2;
+int Vo;
+float R1 = 10000;
+float logR2, R2, T, Tc;
+float c1 = 1.009249522e-03, c2 = 2.378405444e-04, c3 = 2.019202697e-07;
+
+// 온습도 센서
+#include "DHT.h"
+#define DHTPIN 14     // Digital pin connected to the DHT sensor
+#define DHTTYPE DHT22
+DHT dht(DHTPIN, DHTTYPE);
+
+// 기울기 센서
+const int xPin = 4;
+const int yPin = 35;
+const int zPin = 34;
+int minVal = 265;
+int maxVal = 402;
+double xac;
+double yac;
+double zac;
+
+
+//심박센서
+int PulseSensorPurplePin = 36;        // Pulse Sensor PURPLE WIRE connected to ANALOG PIN 0
+int LED13 = 13;   //  The on-board Arduion LED
+int heart_rate;                // holds the incoming raw data. heart_rate value can range from 0-1024
+int Threshold = 500;            // Determine which heart_rate to "count as a beat", and which to ingore.
+
+
+
+
+
+void setup() {
+  pinMode(LED13, OUTPUT);        // pin that will blink to your heartbeat!
+
+  Serial.begin(115200);
+  Serial.println();
+  Serial.println();
+  Serial.println();
+
+  for (uint8_t t = 4; t > 0; t--) {
+    Serial.printf("[SETUP] WAIT %d...\n", t);
+    Serial.flush();
+    delay(1000);
+  }
+
+  wifiMulti.addAP("hyuk", "69396939");
+  Serial.println("Connected to the WiFi network");
+
+  // 온습도 센서
+  Serial.println(F("DHTxx test!"));
+  dht.begin();
+
+
+}
+
+int view = 0;
+String mb_id = "gur5841";
+
+
+void loop() {
+  Vo = analogRead(ThermistorPin);
+  R2 = R1 * (1023.0 / (float)Vo - 1.0);
+  logR2 = log(R2);
+  T = (1.0 / (c1 + c2*logR2 + c3*logR2*logR2*logR2));
+  Tc = T - 268.15;
+
+  // 습도 센서
+  float hum = dht.readHumidity();
+  
+
+
+
+  //가속도
+  int xRead = analogRead(xPin);
+  int yRead = analogRead(yPin);
+  int zRead = analogRead(zPin);
+
+  int xAng = map(xRead, minVal, maxVal, -90, 90);
+  int yAng = map(yRead, minVal, maxVal, -90, 90);
+  int zAng = map(zRead, minVal, maxVal, -90, 90);
+
+ xac = RAD_TO_DEG * (atan2(-yAng, -zAng) + PI);
+  yac = RAD_TO_DEG * (atan2(-xAng, -zAng) + PI);
+  zac = RAD_TO_DEG * (atan2(-yAng, -xAng) + PI);
+
+  //심박
+  heart_rate = analogRead(PulseSensorPurplePin);
+
+
+  // wait for WiFi connection
+  if ((wifiMulti.run() == WL_CONNECTED)) {
+    HTTPClient http;
+    Serial.print("[HTTP] begin...\n");
+    char buf[255];
+    //sprintf(buf, "http://192.168.43.231:8090/Project/Sensor_value?sensor_seq=%s&sensing_value=%s&mb_id=%s", String(sensor_seq++), String(sensing_value), String(mb_id));
+    //온도, 습도, 가속도, 심장
+    sprintf(buf, "http://192.168.43.231:8090/Project/Sensor_value?Tc=%s&hum=%s&xac=%s&yac=%s&zac=%s&heart_rate=%s&mb_id=%s", String(Tc),String(hum),String(xac),String(yac),String(zac),String(heart_rate),String(mb_id));
+    http.begin(buf); //HTTP
+
+    Serial.print("[HTTP] GET...\n");
+    // start connection and send HTTP header
+    int httpCode = http.GET();
+
+    // httpCode will be negative on error
+    if (httpCode == 200) { //에러뜰때 흰색하면
+      // HTTP header has been send and Server response header has been handled
+      Serial.printf("[HTTP] GET... code: %d\n", httpCode);
+
+      // file found at server
+      if (httpCode == HTTP_CODE_OK) {
+        String payload = http.getString();
+        Serial.println(payload);
+        Serial.print("온도 ");
+        Serial.print("Temperature: ");
+        Serial.print(Tc);
+        Serial.println(" C");
+
+
+          Serial.print("습도"); 
+  Serial.print(F("Humidity: "));
+  Serial.print(hum);
+
+
+  Serial.print("기울기"); 
+  Serial.print("x: ");
+  Serial.print(xac);
+  Serial.print(" | y: ");
+  Serial.print(yac);
+  Serial.print(" | z: ");
+  Serial.println(zac);
+
+    Serial.println(heart_rate);                    // Send the heart_rate value to Serial Plotter.
+   if(heart_rate > Threshold){                          // If the heart_rate is above "550", then "turn-on" Arduino's on-Board LED.
+     digitalWrite(LED13,HIGH);
+   } else {
+     digitalWrite(LED13,LOW);                //  Else, the sigal must be below "550", so "turn-off" this LED.
+   }
+
+      }
+    } else {
+      Serial.print(httpCode);
+      String payload = http.getString();
+      Serial.println(payload);
+      Serial.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
+    }
+    http.end();
+  }
+
+  delay(2000);
+}
