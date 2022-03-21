@@ -28,3 +28,25 @@ biometric technology System with Arduino & Web
 ## 6. 사용부품
 [주문리스트.xlsx](https://github.com/2022-SMHRD-KDT-IoT-1/-connect/files/8313140/default.xlsx)
 ![555](https://user-images.githubusercontent.com/97494602/159206488-10d69025-8fdd-453f-b77a-3ba3c154fb21.PNG)
+- 회로도
+- ![6666](https://user-images.githubusercontent.com/97494602/159207344-06a9ee4b-cb00-4efe-bab6-1dae49ec27fd.PNG)
+
+
+## 7. 활용 사진 예시
+(사용자 제품 장착)
+![9999](https://user-images.githubusercontent.com/97494602/159207717-25edef81-cea8-4b32-a0b2-87e9cf3ebac7.PNG)
+
+(홈페이지)
+![7777](https://user-images.githubusercontent.com/97494602/159207622-7567dae5-dcec-4b01-a7b9-3dd328b70565.PNG)
+
+(측정값 확인)
+![8888](https://user-images.githubusercontent.com/97494602/159207642-f70eb76d-5331-4545-9227-fc924548b3bb.PNG)
+
+## 8 제작일정
+![100000](https://user-images.githubusercontent.com/97494602/159208030-0eb1df4b-e48d-4c48-aacb-bcb2a37669cd.PNG)
+
+## 9 팀원 단위 업무 분장 및 결과표
+![xxxx](https://user-images.githubusercontent.com/97494602/159208416-88f7c737-e776-4484-8f2a-25d78a4d98b8.PNG)
+
+
+
